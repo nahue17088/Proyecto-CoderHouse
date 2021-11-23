@@ -139,11 +139,17 @@ audio{
     width: 450px;
     margin: 20px;
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
+.container-mercury, .container-urane, .container-venus, .container-saturne, .container-mars, .container-earth, .container-neptune{
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+    
+}
 
-.box-1 h1{
+.box-1 h2{
     color: rgba(206, 206, 206, 0.37);
     text-align: left;
     letter-spacing: 3px;
@@ -152,6 +158,7 @@ justify-content: center;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     font-size: 15px;
+    text-align: center;
 }
 
 .centradoBox{
@@ -185,7 +192,7 @@ justify-content: center;
     text-transform: uppercase;
     display: flex;
     flex-direction: column-reverse;
-    
+
 }
 
 .audio{
@@ -220,12 +227,6 @@ footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.img-footer{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -255,8 +256,22 @@ footer{
         align-items: center;
     }
 
-    @media only screen and (max-width: 380px) {
-        .conteiner-box{
+    .box-3{
+        border: 1.5px solid rgba(255, 254, 254, 0.452);
+        background: transparent;
+        height: 140px;
+        width: 450px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-3 p{
+        text-align: center;
+    }
+
+    @media screen and (max-width: 380px ) {
+        .container-mercury, .container-urane, .container-venus, .container-saturne, .container-mars, .container-earth, .container-neptune{
         display: flex;
         flex-direction: column;
         }
